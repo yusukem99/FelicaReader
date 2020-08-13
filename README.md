@@ -3,11 +3,6 @@ Felica用カードリーダーライブラリ
 exampleに動作サンプルがあります。
 
 ### インストール
-プライベートリポジトリなので、利用者にトークンを発行します。
-
-```bash
-npm i git+ssh://git@gitlab.com:mli-dev/mitsuya/felicareader.git
-```
 
 ## 使用例
 ```js
