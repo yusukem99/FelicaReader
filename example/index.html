@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>FelicaReader.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../FelicaReader.js"></script>
+    <script>
+        window.onload = () => {
+            const reader = new FelicaReader();
+            const startButton = document.querySelector('#read');
+            const show = document.querySelector('#show');
+            startButton.addEventListener('click', async () => {
+                await reader.getDevice();
+                await reader.deviceInit()
+                let data = await reader.readWithOutEncryption();
+                show.textContent = data;
+                console.log('data', data)
+            });
+        }
+    </script>
+  </head>
+  <body>
+    <button id="read" class="">読み取る</button>
+    <div id="show"></div>
+  </body>
+</html>
