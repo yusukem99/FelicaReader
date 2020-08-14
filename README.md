@@ -2,6 +2,8 @@
 Felica用カードリーダーライブラリ  
 exampleに動作サンプルがあります。
 
+### デモ
+https://yusukem99.github.io/FelicaReader/example/
 ### インストール
 
 ## 使用例
